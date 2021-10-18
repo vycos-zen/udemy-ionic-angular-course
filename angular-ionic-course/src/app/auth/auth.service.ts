@@ -5,20 +5,20 @@ import {Router} from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
-  private _userIsAuthenticated = false;
+  private userIsAuthenticated = false;
 
-  get userIsAuthenticated(){
-    return this._userIsAuthenticated;
+  get isAuthenticated(){
+    return this.userIsAuthenticated;
   }
   constructor(private router: Router) {
   }
 
   login(){
-    this._userIsAuthenticated = true;
+    this.userIsAuthenticated = true;
   }
 
   logout(){
-    this._userIsAuthenticated = false;
+    this.userIsAuthenticated = false;
     this.router.navigateByUrl('/auth').then();
   }
 }

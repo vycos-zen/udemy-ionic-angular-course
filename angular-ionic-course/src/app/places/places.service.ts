@@ -12,7 +12,16 @@ export class PlacesService {
   private placesList: Place[] = [
     new Place('p1', 'Budapest Mansion', 'In the heart of Hungary', this.stockImageUrl, 9000),
     new Place('p2', 'Eger Mansion', 'In the heart of Hungary', this.stockImageUrl, 8000),
-    new Place('p3', 'Pécs Mansion', 'In the heart of Hungary', this.stockImageUrl, 7000)
+    new Place('p3', 'Pécs Mansion', 'In the heart of Hungary', this.stockImageUrl, 7000),
+    new Place('p4', 'Budapest Mansion', 'In the heart of Hungary', this.stockImageUrl, 9000),
+    new Place('p5', 'Eger Mansion', 'In the heart of Hungary', this.stockImageUrl, 8000),
+    new Place('p6', 'Pécs Mansion', 'In the heart of Hungary', this.stockImageUrl, 7000),
+    new Place('p7', 'Budapest Mansion', 'In the heart of Hungary', this.stockImageUrl, 9000),
+    new Place('p8', 'Eger Mansion', 'In the heart of Hungary', this.stockImageUrl, 8000),
+    new Place('p9', 'Pécs Mansion', 'In the heart of Hungary', this.stockImageUrl, 7000),
+    new Place('p10', 'Budapest Mansion', 'In the heart of Hungary', this.stockImageUrl, 9000),
+    new Place('p11', 'Eger Mansion', 'In the heart of Hungary', this.stockImageUrl, 8000),
+    new Place('p12', 'Pécs Mansion', 'In the heart of Hungary', this.stockImageUrl, 7000),
   ];
 
   constructor() {

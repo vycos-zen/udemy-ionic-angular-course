@@ -44,10 +44,10 @@ export class AuthGuard implements CanActivate, CanActivateChild, CanDeactivate<u
   canLoad(
     route: Route,
     segments: UrlSegment[]): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if (!this.authService.userIsAuthenticated) {
+    if (!this.authService.isAuthenticated) {
       this.router.navigateByUrl('/auth').then();
     }
 
-    return this.authService.userIsAuthenticated;
+    return this.authService.isAuthenticated;
   }
 }
